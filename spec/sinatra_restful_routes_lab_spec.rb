@@ -137,9 +137,9 @@ describe "Recipe App" do
 
     it "redirects to the recipe show page" do
       expect(page.current_path).to eq("/recipes/#{@cookie.id}")
-      # expect(page).to have_content("Double chocolate chip cookies")
-      # expect(page).to have_content("chocolate chips, flour, sugar, butter, cocoa powder")
-      # expect(page).to have_content("30 minutes")
+      expect(page).to have_content("Double chocolate chip cookies")
+      expect(page).to have_content("chocolate chips, flour, sugar, butter, cocoa powder")
+      expect(page).to have_content("30 minutes")
     end
   end
 
